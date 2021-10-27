@@ -13,15 +13,111 @@
 </head>
 <body>
     <div class="wrapper">
+        <!-- banner 轮播图 -->
         <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-color: #69c;">Slide 1</div>
-                <div class="swiper-slide" style="background-color: rgb(163, 232, 140);">Slide 2</div>
-                <div class="swiper-slide" style="background-color: rgb(240, 128, 24);">Slide 3</div>
+                <div class="swiper-slide">
+                    <img src="/images/home-background.png" alt="banner" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="/images/home-background.png" alt="banner" />
+                </div>
             </div>
         </div>
+
+        <!-- logo -->
+        <div class="logo">
+            <img src="/images/logo-white@2x.png" alt="logo" />
+        </div>
+
+        <!-- 当前背景banner图的下角标 -->
+        <div class="swiper-index">
+            <div class="group">
+                <span class="arc active">
+                    <span>01</span>
+                </span>
+                <span class="arc-small"></span>
+                <span class="arc-small"></span>
+            </div>
+            <div class="group">
+                <span class="arc">
+                    <span>02</span>
+                </span>
+                <span class="arc-small"></span>
+                <span class="arc-small"></span>
+            </div>
+        </div>
+
+        <!-- 晃动的鼠标 -->
+        <img src="/images/icons/mouse.png" class="mouse" alt="mouse" />
+
+
+        <!-- 菜单栏 -->
+        <div class="nav">
+            <!-- 收起时的菜单栏 -->
+            <div class="nav-inside">
+                <div class="menu">
+                    <img src="/images/icons/menu.png" alt="menu" />
+                    <span>菜单</span>
+                </div>
+                <div class="product-center">
+                    <span>产品中心</span>
+                </div>
+            </div>
+            <div class="nav-outside">
+                <img src="/images/icons/close.png" alt="close" class="close" />
+                <div class="nav-outside-block">
+                    <div class="content">
+                        <p class="title">关于我们</p>
+                        <p>自2011年以</p>
+                        <p>举视（上海）新能源科技有限公司成立于新能源汽车发展元年，是一家集新能源汽车充电设备研发、生产、销售、安装服务为一体的综合性科技企业。</p>
+                        <p class="indent"> 公司秉持“精益求精·敬天爱人”的企业宗旨，坚持在新能源汽车充电领域发展，为客户提供新能源汽车充电设备与充电整体解决方案，服务于充电运营商，为国家新能源新基建计划作服务。迎合党中央新基建号召的发展机遇，迅速成长为新能源汽车充电服务领域的一支生力军。</p>
+                        <p class="indent">公司现有专利25项，其中外观专利18项，结构实用新型专利7项，获得CQC检验认证、CE认证，拥有一个控制软件著作权，一个平台服务软件著作权 举视新能源，期待与您共同进步，共享美好！</p>
+                        <p style="margin-bottom: 10px;">打电话给我们</p>
+                        <p class="phone">199-5172-3459</p>
+                        <div class="shop">
+                            <img src="/images/jushi-shop@2x.png" alt="举视商城" />
+                            <img src="/images/cat-shop@2x.png" alt="天猫商城" />
+                        </div>
+                        <div class="logos">
+                            <img src="/images/partner/1.jpg" alt="company" />
+                            <img src="/images/partner/2.jpg" alt="company" />
+                            <img src="/images/partner/3.jpg" alt="company" />
+                            <img src="/images/partner/4.jpg" alt="company" />
+                            <img src="/images/partner/5.jpg" alt="company" />
+                            <img src="/images/partner/6.jpg" alt="company" />
+                            <img src="/images/partner/7.jpg" alt="company" />
+                            <img src="/images/partner/8.jpg" alt="company" />
+                            <img src="/images/partner/9.jpg" alt="company" />
+                            <img src="/images/partner/10.jpg" alt="company" />
+                            <img src="/images/partner/11.jpg" alt="company" />
+                            <img src="/images/partner/12.jpg" alt="company" />
+                            <img src="/images/partner/13.jpg" alt="company" />
+                            <img src="/images/partner/14.jpg" alt="company" />
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-outside-block">
+                    <div class="content">
+                        <div class="row">
+                            <span class="label">首页</span>
+                            <span class="grey"></span>
+                            <span class="active"></span>
+                            <span class="english">Home</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product"><span></span></div>
+            <!-- 半透明遮罩层 -->
+            <div class="mask"></div>
+        </div>
+
+        <!-- 底部注册信息 -->
+        <footer>COPYRIGHT 2019举视（上海）新能源科技有限公司 All rights reserved<a href="https://beian.miit.gov.cn/#/Integrated/index">沪ICP备16035790号-1</a></footer>
     </div>
 </body>
 <script src="/common/jquery-1.8.3/jquery.js"></script>
+<script src="/javascript/common.js"></script>
 <script src="/javascript/home.js"></script>
 </html>
