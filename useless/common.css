@@ -13,31 +13,32 @@ p {
     margin-block-end: 0;
 }
 
+
 *::-webkit-scrollbar
 {
-	width: 0.417vw;
-	height: 0.845vh;
+	width: 8px;
+	height: 8px;
 	background-color: #F5F5F5;
 }
  
 /*定义滚动条轨道 内阴影+圆角*/
 *::-webkit-scrollbar-track
 {
-	box-shadow: inset 0 0 0.313vw rgba(0,0,0,0.2);
-	border-radius: 0.26vw;
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+	border-radius: 5px;
 	background-color: #F5F5F5;
 }
  
 /*定义滑块 内阴影+圆角*/
 *::-webkit-scrollbar-thumb
 {
-	border-radius:  0.26vw;
-	box-shadow: inset 0 0 0.313vw rgba(0,0,0,.2);
+	border-radius: 5px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.2);
 	background-color: #999;
 }
 
 .nav {
-    width: 4.167vw;
+    width: 80px;
     height: 100%;
     position: fixed;
     right: 0;
@@ -53,13 +54,14 @@ p {
     top: 0;
     z-index: 9;
     background-color: rgba(255, 255, 255, .08);
-    border-left: 0.052vw solid rgba(255, 255, 255, .14);
+    border-left: 1px solid rgba(255, 255, 255, .14);
     box-sizing: border-box;
 }
 
+
 .nav .menu {
     width: 100%;
-    height: 8.342vh;
+    height: 79px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,29 +70,29 @@ p {
 }
 
 .nav .menu img {
-    width: 1.563vw;
-    height: 3.168vh;
+    width: 30px;
+    height: 30px;
 }
 
 .nav .menu span {
-    font-size: 0.729vw;
+    font-size: 14px;
     color: #515151;
 }
 
 .nav .product-center {
-    width: 4.167vw;
-    height: 19vh;
+    width: 80px;
+    height: 180px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
-    font-size: 0.833vw;
+    font-size: 16px;
     color: #F9F9F9;
     cursor: pointer;
 }
 
 .nav .product-center span {
-    width: 1.563vw;
+    width: 30px;
     white-space: wrap;
     display: inline-block;
     text-align: center;
@@ -102,25 +104,25 @@ p {
 }
 
 .nav .product {
-    width: 6.25vw;
-    height: 19vh;
+    width: 120px;
+    height: 180px;
     background-color: #23344D;
     position: absolute;
     top: 50%;
-    left: -2.083vw;
-    border-radius: 4.688vw 0 0 4.688vw;
+    left: -40px;
+    border-radius: 90px 0 0 90px;
     transform: translateY(-50%);
 }
 
 .nav .product span {
-    width: 1.458vw;
-    height: 0.422vh;
+    width: 28px;
+    height: 4px;
     background-color: #F9F9F9;
     display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 1.302vw;
+    left: 25px;
 }
 
 .nav .nav-outside {
@@ -135,8 +137,8 @@ p {
 }
 
 .nav .nav-outside .close {
-    width: 4.167vw;
-    height: 8.448vh;
+    width: 80px;
+    height: 80px;
     position: absolute;
     right: 0;
     top: 0;
@@ -147,7 +149,7 @@ p {
     flex: 1;
     height: 100%;
     box-sizing: border-box;
-    padding-bottom: 3.168vh;
+    padding-bottom: 30px;
     display: flex;
     align-items: center;
 }
@@ -156,23 +158,23 @@ p {
     width: 100%;
     max-height: 100%;
     box-sizing: border-box;
-    padding: 4.224vh 2.083vw;
+    padding: 40px;
     overflow: auto;
 }
 
 .nav .nav-outside .nav-outside-block .content .title {
-    width: 3.125vw;
+    width: 60px;
     white-space: wrap;
-    font-size: 1.25vw;
+    font-size: 24px;
     color: #656E7D;
-    margin-bottom: 1.056vh;
+    margin-bottom: 10px;
 }
 
 .nav .nav-outside .nav-outside-block .content p {
-    font-size: 0.729vw;
+    font-size: 14px;
     color: #656E7D;
-    line-height: 2.64vh;
-    margin-bottom: 1.584vh;
+    line-height: 25px;
+    margin-bottom: 15px;
 }
 
 .nav .nav-outside .nav-outside-block .content .indent {
@@ -180,18 +182,18 @@ p {
 }
 
 .nav .nav-outside .nav-outside-block .content .phone {
-    font-size: 1.146vw;
+    font-size: 22px;
     color: #656E7D;
     font-weight: bold;
 }
 
 .nav .nav-outside .nav-outside-block .content .shop {
-    width: 18.229vw;
-    height: 5.069vh;
+    width: 350px;
+    height: 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2.112vh;
+    margin-bottom: 20px;
 }
 
 .nav .nav-outside .nav-outside-block .content .logos {
@@ -204,14 +206,14 @@ p {
 }
 
 .nav .nav-outside .nav-outside-block .content .shop img {
-    width: 8.333vw;
-    height: 5.069vh;
+    width: 160px;
+    height: 48px;
     cursor: pointer;
 }
 
 .nav .nav-outside .nav-outside-block .content .row {
     cursor: pointer;
-    margin-bottom: 4.224vh;
+    margin-bottom: 40px;
 }
 
 .nav .nav-outside .nav-outside-block .content .row:last-child {
@@ -221,16 +223,16 @@ p {
 .nav .nav-outside .nav-outside-block .content .row .menu-text {
     display: inline-block;
     position: relative;
-    margin-left: 2.604vw;
+    margin-left: 50px;
 }
 
 .nav .nav-outside .nav-outside-block .content .row .active .active {
-    height: 1.267vh;
+    height: 12px;
     background: #008DDC;
     opacity: 0.4;
     width: 100%;
     position: absolute;
-    bottom: 0.528vh;
+    bottom: 5px;
     left: 0;
 }
 
@@ -239,31 +241,31 @@ p {
 }
 
 .nav .nav-outside .nav-outside-block .content .row .label {
-    font-size: 1.25vw;
-    line-height: 4.224vh;
+    font-size: 24px;
+    line-height: 40px;
     color: #656E7D;
     font-weight: bold;
-    margin: 0 0.26vw;
+    margin: 0 5px;
 }
 
 .nav .nav-outside .nav-outside-block .content .row .grey {
-    height: 1.267vh;
+    height: 12px;
     background: #DAE0E9;
     opacity: 0.6;
     display: block;
     position: absolute;
-    bottom: 0.528vh;
+    bottom: 5px;
     left: 0;
     transition: all .2s linear;
 }
 
 .nav .nav-outside .nav-outside-block .content .row .english {
-    font-size: 0.833vw;
-    line-height: 1.69vh;
+    font-size: 16px;
+    line-height: 16px;
     color: #9BA2AE;
-    margin-top: 0.634vh;
+    margin-top: 6px;
     display: block;
-    margin-left: 3.385vw;
+    margin-left: 65px;
 }
 
 .nav .mask {
@@ -280,19 +282,19 @@ p {
 
 footer {
     width: 100%;
-    height: 3.168vh;
+    height: 30px;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 10;
     background-color: #000;
     color: #fff;
-    font-size: 0.625vw;
-    line-height: 3.168vh;
+    font-size: 12px;
+    line-height: 30px;
     text-align: center;
 }
 
 footer a {
-    margin-left: 0.521vw;
+    margin-left: 10px;
     color: #fff;
 }

@@ -15,11 +15,11 @@
 }
 
 .wrapper .logo {
-    width: 10.938vw;
-    height: 5.913vh;
+    width: 210px;
+    height: 56px;
     position: absolute;
-    top: 2.112vh;
-    left: 2.083vw;
+    top: 20px;
+    left: 40px;
     z-index: 10;
 }
 
@@ -31,20 +31,20 @@
 
 .wrapper .swiper-index {
     position: absolute;
-    left: 2.0834vw;
+    left: 40px;
     top: 50%;
     z-index: 10;
     transform: translateY(-50%);
-    width:2.083vw;
+    width: 40px;
 }
 
 .wrapper .swiper-index .group {
-    padding-bottom: 1.056vh;
+    padding-bottom: 10px;
 }
 
 .wrapper .swiper-index .arc {
-    width: 0.417vw;
-    height: 0.845vh;
+    width: 8px;
+    height: 8px;
     display: block;
     border-radius: 50%; 
     background-color: #fff;
@@ -54,17 +54,17 @@
 
 .wrapper .swiper-index .arc span {
     position: absolute;
-    font-size: 0.729vw;
+    font-size: 14px;
     color: #fff;
-    right: -1.302vw;
-    top: -0.845vh;
+    right: -25px;
+    top: -8px;
     opacity: 0;
     transition: opacity .2s linear;
 }
 
 .wrapper .swiper-index .active {
-    width: 1.354vw;
-    height: 0.211vh;
+    width: 26px;
+    height: 2px;
     background-color: #fff;
     display: block;
     border-radius: 0;
@@ -75,14 +75,14 @@
 }
 
 .wrapper .swiper-index .arc-small {
-    width: 0.208vw;
-    height: 0.422vh;
+    width: 4px;
+    height: 4px;
     border-radius: 50%;
     background-color: #ccc;
     display: block;
-    margin-top: 1.056vh;
+    margin-top: 10px;
     position: relative;
-    left: 0.104vw;
+    left: 2px;
 }
 
 .wrapper .swiper-index .group:last-child {
@@ -95,11 +95,11 @@
 
 .wrapper .mouse {
     position: absolute;
-    bottom: 6.336vh;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
-    width: 1.354vw;
-    height: 2.746vh;
+    width: 26px;
+    height: 26px;
     z-index: 7;
     animation: move 2s infinite;
 }
