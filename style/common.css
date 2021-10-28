@@ -15,24 +15,24 @@ p {
 
 *::-webkit-scrollbar
 {
-	width: 0.417vw;
-	height: 0.845vh;
+	width: 8px;
+	height: 8px;
 	background-color: #F5F5F5;
 }
  
 /*定义滚动条轨道 内阴影+圆角*/
 *::-webkit-scrollbar-track
 {
-	box-shadow: inset 0 0 0.313vw rgba(0,0,0,0.2);
-	border-radius: 0.26vw;
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+	border-radius: 5px;
 	background-color: #F5F5F5;
 }
  
 /*定义滑块 内阴影+圆角*/
 *::-webkit-scrollbar-thumb
 {
-	border-radius:  0.26vw;
-	box-shadow: inset 0 0 0.313vw rgba(0,0,0,.2);
+	border-radius: 5px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.2);
 	background-color: #999;
 }
 
@@ -210,8 +210,10 @@ p {
 }
 
 .nav .nav-outside .nav-outside-block .content .row {
+    display: block;
     cursor: pointer;
     margin-bottom: 4.224vh;
+    text-decoration: none;
 }
 
 .nav .nav-outside .nav-outside-block .content .row:last-child {
@@ -277,6 +279,22 @@ p {
     display: none;
 }
 
+.dark .nav-inside{
+    background-color: #fff;
+    border-left: 0.052vw solid #e8e8e8;
+}
+
+.mobile-nav-btn {
+    display: none;
+}
+
+.mobile-nav-btn-black {
+    display: none;
+}
+
+.mobile-close {
+    display: none;
+}
 
 footer {
     width: 100%;

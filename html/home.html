@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <meta name="keywords" content="举世新能源">
     <title>举世新能源</title>
-    <link rel="stylesheet" href="/style/common.css" />
-    <link rel="stylesheet" href="/style/home.css" />
+    <link rel="stylesheet" media="all and (min-width: 1100px)" href="/style/common.css" />
+    <link rel="stylesheet" media="all and (min-width: 1100px)" href="/style/home.css" />
+    <link rel="stylesheet" media="all and (max-width: 1100px)" href="/style/common-mobile.css" />
+    <link rel="stylesheet" media="all and (max-width: 1100px)" href="/style/home-moblie.css" />
     <link rel="stylesheet" href="/common/swiper-7.0.8/swiper-bundle.min.css" />
     <script src="/common/swiper-7.0.8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="/common/animate-4.1.1/animate.css">
@@ -24,6 +26,7 @@
                     <img src="/images/home-background.png" alt="banner" />
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
 
         <!-- logo -->
@@ -60,93 +63,112 @@
                     <img src="/images/icons/menu.png" alt="menu" />
                     <span>菜单</span>
                 </div>
-                <div class="product-center">
+                <a href="./productList.html" class="product-center">
                     <span>产品中心</span>
-                </div>
+                </a>
             </div>
             <div class="nav-outside">
                 <img src="/images/icons/close.png" alt="close" class="close" />
                 <div class="nav-outside-block">
                     <div class="content">
-                        <p class="title">关于我们</p>
+                        <p class="title"><span></span>关于我们</p>
                         <p>自2011年以</p>
-                        <p>举视（上海）新能源科技有限公司成立于新能源汽车发展元年，是一家集新能源汽车充电设备研发、生产、销售、安装服务为一体的综合性科技企业。</p>
-                        <p class="indent"> 公司秉持“精益求精·敬天爱人”的企业宗旨，坚持在新能源汽车充电领域发展，为客户提供新能源汽车充电设备与充电整体解决方案，服务于充电运营商，为国家新能源新基建计划作服务。迎合党中央新基建号召的发展机遇，迅速成长为新能源汽车充电服务领域的一支生力军。</p>
-                        <p class="indent">公司现有专利25项，其中外观专利18项，结构实用新型专利7项，获得CQC检验认证、CE认证，拥有一个控制软件著作权，一个平台服务软件著作权 举视新能源，期待与您共同进步，共享美好！</p>
-                        <p style="margin-bottom: 10px;">打电话给我们</p>
-                        <p class="phone">199-5172-3459</p>
-                        <div class="shop">
-                            <a href="#"><img src="/images/jushi-shop@2x.png" alt="举视商城" /></a>
-                            <a href="#"><img src="/images/cat-shop@2x.png" alt="天猫商城" /></a>
-                        </div>
-                        <div class="logos">
-                            <img src="/images/partner/1.jpg" alt="company" />
-                            <img src="/images/partner/2.jpg" alt="company" />
-                            <img src="/images/partner/3.jpg" alt="company" />
-                            <img src="/images/partner/4.jpg" alt="company" />
-                            <img src="/images/partner/5.jpg" alt="company" />
-                            <img src="/images/partner/6.jpg" alt="company" />
-                            <img src="/images/partner/7.jpg" alt="company" />
-                            <img src="/images/partner/8.jpg" alt="company" />
-                            <img src="/images/partner/9.jpg" alt="company" />
-                            <img src="/images/partner/10.jpg" alt="company" />
-                            <img src="/images/partner/11.jpg" alt="company" />
-                            <img src="/images/partner/12.jpg" alt="company" />
-                            <img src="/images/partner/13.jpg" alt="company" />
-                            <img src="/images/partner/14.jpg" alt="company" />
+                        <div class="mobile-content">
+                            <p>举视（上海）新能源科技有限公司成立于新能源汽车发展元年，是一家集新能源汽车充电设备研发、生产、销售、安装服务为一体的综合性科技企业。</p>
+                            <p class="indent"> 公司秉持“精益求精·敬天爱人”的企业宗旨，坚持在新能源汽车充电领域发展，为客户提供新能源汽车充电设备与充电整体解决方案，服务于充电运营商，为国家新能源新基建计划作服务。迎合党中央新基建号召的发展机遇，迅速成长为新能源汽车充电服务领域的一支生力军。</p>
+                            <p class="indent">公司现有专利25项，其中外观专利18项，结构实用新型专利7项，获得CQC检验认证、CE认证，拥有一个控制软件著作权，一个平台服务软件著作权 举视新能源，期待与您共同进步，共享美好！</p>
+                            <p style="margin-bottom: 10px;">打电话给我们</p>
+                            <p class="phone">199-5172-3459</p>
+                            <div class="shop">
+                                <a href="#"><img src="/images/jushi-shop@2x.png" alt="举视商城" /></a>
+                                <a href="#"><img src="/images/cat-shop@2x.png" alt="天猫商城" /></a>
+                            </div>
+                            <div class="logos">
+                                <a href="https://www.bgy.com.cn/"><img src="/images/partner/1.jpg" alt="company" /></a>
+                                <a href="http://www.hy-online.com/"><img src="/images/partner/2.jpg" alt="company" /></a>
+                                <a href="http://www.potevio.com/"><img src="/images/partner/3.jpg" alt="company" /></a>
+                                <a href="http://www.sgcc.com.cn/"><img src="/images/partner/4.jpg" alt="company" /></a>
+                                <a href="http://www.whdonde.com/"><img src="/images/partner/5.jpg" alt="company" /></a>
+                                <a href="http://www.titan21.com/dichan/"><img src="/images/partner/6.jpg" alt="company" /></a>
+                                <a href="https://www.cifi.com.cn/"><img src="/images/partner/7.jpg" alt="company" /></a>
+                                <a href="https://www.evergrande.com/"><img src="/images/partner/8.jpg" alt="company" /></a>
+                                <a href="https://www.audi.cn/cn/web/zh.html?csref=sea:baidu:bc:baidu_sem_20200923:a:baidu:baidu.com"><img src="/images/partner/9.jpg" alt="company" /></a>
+                                <a href="https://www.bmw.com.cn/zh/index.html?mz_ca=2212932&mz_sp=7jnaj&mz_kw=32694439&mz_cm=1288?bd_vid=10399172614461128642"><img src="/images/partner/10.jpg" alt="company" /></a>
+                                <a href="https://www.landrover.com.cn/index.html"><img src="/images/partner/11.jpg" alt="company" /></a>
+                                <a href="https://www.ldjt.com.cn/"><img src="/images/partner/12.jpg" alt="company" /></a>
+                                <a href="http://www.timesgroup.cn/"><img src="/images/partner/13.jpg" alt="company" /></a>
+                                <a href="https://www.vanke.com/"><img src="/images/partner/14.jpg" alt="company" /></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="nav-outside-block">
+                <div class="nav-outside-block mobile-nav">
+                    <div class="mobile-nav-btn-black">
+                        <img src="/images/mobile-icons/menu-black.png" alt="menu">
+                        <span>菜单</span>
+                    </div>
+                    <img src="/images/icons/close.png" alt="close" class="mobile-close" />
                     <div class="content">
-                        <div class="row">
-                            <div class="menu-text active">
-                                <span class="label">首页</span>
-                                <span class="grey"></span>
-                                <span class="active"></span>
+                        <a href="./home.html" class="row">
+                            <div>
+                                <div class="menu-text active">
+                                    <span class="label">首页</span>
+                                    <span class="grey"></span>
+                                    <span class="active"></span>
+                                </div>
+                                <span class="english">Home</span>
                             </div>
-                            <span class="english">Home</span>
-                        </div>
-                        <div class="row">
-                            <div class="menu-text">
-                                <span class="label">产品中心</span>
-                                <span class="grey"></span>
-                                <span class="active"></span>
+                        </a>
+                        <a href="./productList.html" class="row">
+                            <div>
+                                <div class="menu-text">
+                                    <span class="label">产品中心</span>
+                                    <span class="grey"></span>
+                                    <span class="active"></span>
+                                </div>
+                                <span class="english">Product list</span>
                             </div>
-                            <span class="english">Product list</span>
-                        </div>
-                        <div class="row">
-                            <div class="menu-text">
-                                <span class="label">解决方案与应用</span>
-                                <span class="grey"></span>
-                                <span class="active"></span>
+                        </a>
+                        <a href="#" class="row">
+                            <div>
+                                <div class="menu-text">
+                                    <span class="label">解决方案与应用</span>
+                                    <span class="grey"></span>
+                                    <span class="active"></span>
+                                </div>
+                                <span class="english">Equipment customization</span>
                             </div>
-                            <span class="english">Equipment customization</span>
-                        </div>
-                        <div class="row">
-                            <div class="menu-text">
-                                <span class="label">举视合伙人</span>
-                                <span class="grey"></span>
-                                <span class="active"></span>
+                        </a>
+                        <a href="#" class="row">
+                            <div>
+                                <div class="menu-text">
+                                    <span class="label">举视合伙人</span>
+                                    <span class="grey"></span>
+                                    <span class="active"></span>
+                                </div>
+                                <span class="english">Company profile</span>
                             </div>
-                            <span class="english">Company profile</span>
-                        </div>
-                        <div class="row">
-                            <div class="menu-text">
-                                <span class="label">云管理服务中心</span>
-                                <span class="grey"></span>
-                                <span class="active"></span>
+                        </a>
+                        <a href="#" class="row">
+                            <div>
+                                <div class="menu-text">
+                                    <span class="label">云管理服务中心</span>
+                                    <span class="grey"></span>
+                                    <span class="active"></span>
+                                </div>
+                                <span class="english">Cloud service center</span>
                             </div>
-                            <span class="english">Cloud service center</span>
-                        </div>
-                        <div class="row">
-                            <div class="menu-text">
-                                <span class="label">公司简介</span>
-                                <span class="grey"></span>
-                                <span class="active"></span>
+                        </a>
+                        <a href="#" class="row">
+                            <div>
+                                <div class="menu-text">
+                                    <span class="label">公司简介</span>
+                                    <span class="grey"></span>
+                                    <span class="active"></span>
+                                </div>
+                                <span class="english">Company profile</span>
                             </div>
-                            <span class="english">Company profile</span>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -154,6 +176,33 @@
             <!-- 半透明遮罩层 -->
             <div class="mask"></div>
         </div>
+
+        <!-- 移动端侧边的菜单 -->
+        <div class="mobile-nav-btn">
+            <img src="/images/mobile-icons/menu-while.png" alt="menu">
+            <span>菜单</span>
+        </div>
+
+        <!-- 移动端底部的导航 -->
+        <div class="mobile-menu">
+            <a href="./home.html" class="block active">
+                <img />
+                <span>首页</span>
+            </a>
+            <a href="./productList.html" class="block">
+                <img />
+                <span>产品中心</span>
+            </a>
+            <a href="#" class="block">
+                <img />
+                <span>解决方案</span>
+            </a>
+            <a href="#" class="block">
+                <img />
+                <span>合伙人</span>
+            </a>
+        </div>
+
 
         <!-- 底部注册信息 -->
         <footer>COPYRIGHT 2019举视（上海）新能源科技有限公司 All rights reserved<a href="https://beian.miit.gov.cn/#/Integrated/index">沪ICP备16035790号-1</a></footer>

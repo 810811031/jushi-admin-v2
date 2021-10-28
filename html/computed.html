@@ -20,14 +20,16 @@
 </body>
 <script src="/common/jquery-1.8.3/jquery.js"></script>
 <script>
+    var w = 19.2
+    var h = 9.47
     $('#input1').change(function () {
         var val = Number($(this).val())
-        var a = (val / 19.2).toFixed(3)
+        var a = (val / w).toFixed(3)
         $('.span1').text(a)
     })
     $('#input2').change(function () {
         var val = Number($(this).val())
-        var a = (val / 9.47).toFixed(3)
+        var a = (val / h).toFixed(3)
         $('.span2').text(a)
     })
 </script>

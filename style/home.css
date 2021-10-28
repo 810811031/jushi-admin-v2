@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    font-size: 0;
 }
 
 .wrapper .swiper {
@@ -14,6 +15,10 @@
     height: 100%;
 }
 
+.wrapper .swiper-pagination {
+    display: none;
+}
+
 .wrapper .logo {
     width: 10.938vw;
     height: 5.913vh;
@@ -21,6 +26,10 @@
     top: 2.112vh;
     left: 2.083vw;
     z-index: 10;
+}
+
+.wrapper .mobile-close {
+    display: none;
 }
 
 .wrapper .logo img {
@@ -102,6 +111,10 @@
     height: 2.746vh;
     z-index: 7;
     animation: move 2s infinite;
+}
+
+.wrapper .mobile-nav-btn-black {
+    display: none;
 }
 
 @keyframes move {

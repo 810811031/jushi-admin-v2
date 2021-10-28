@@ -1,3 +1,16 @@
+// 如果设备的宽度少于 1100 则初始化
+function setRem() {
+    var device_width = document.documentElement.clientWidth
+    if (device_width <= 1100) {
+        var ratio =  device_width / 750 * 100
+        $('html').css({ fontSize: ratio + 'px' })
+    }
+}
+setRem()
+window.onresize = function () {
+    setRem()
+}
+
 /**
  * 点击菜单出现遮罩层和菜单详情
  */
@@ -12,6 +25,7 @@ $('.menu').click(function () {
 $('.mask').click(function () {
     $(this).fadeOut(150)
     $('.nav-outside').animate({ right: '-60%' }, 300)
+    $('.mobile-nav').animate({ left: '-3.72rem' }, 300)
 })
 
 /**
@@ -34,4 +48,20 @@ $('.nav-outside-block .row').mouseenter(function () {
  */
 $('.nav-outside-block .row').mouseleave(function () {
     $($(this).find('.grey')).animate({ width: '0' }, 200)
+})
+
+/**
+ * 移动端点击菜单栏
+ */
+$('.mobile-nav-btn').click(function () {
+    $('.mask').fadeIn(150)
+    $('.mobile-nav').animate({ left: '0' }, 300)
+})
+
+/**
+ * 点击 × 关闭菜单
+ */
+$('.mobile-close').click(function () {
+    $('.mask').fadeOut(150)
+    $('.mobile-nav').animate({ left: '-3.72rem' }, 300)
 })
