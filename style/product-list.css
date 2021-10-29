@@ -70,6 +70,8 @@
     margin: 0 auto;
     border: 1px solid red;
     margin-top: 1.056vh;
+    background-position: center;
+    background-size: contain;
 }
 
 .wrapper .product-block-deviceModel {
