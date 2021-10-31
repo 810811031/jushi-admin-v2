@@ -16,3 +16,168 @@ p {
 footer {
     display: none;
 }
+
+.nav-outside {
+    position: absolute;
+    left: -100%;
+}
+
+.nav .nav-inside {
+    display: none;
+}
+
+.nav .nav-outside-block:nth-of-type(1) {
+    display: none;
+}
+
+.mobile-menu {
+    width: 100%;
+    height: 1rem;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    border-top: .5px solid #C7CED9;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.mobile-menu .block {
+    flex: 1;
+    height: 100%;
+    color: #969CA6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.mobile-menu .block:active {
+    background-color: rgba(0,0,0,.1);
+}
+
+.mobile-menu .block img {
+    width: .46rem;
+    height: .46rem;
+}
+
+.mobile-menu .block span {
+    font-size: .24rem;
+}
+
+.mobile-menu .active {
+    color: #4A4D52;
+    font-size: bold;
+}
+
+.mobile-nav {
+    width: 3.72rem !important;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: -3.72rem;
+    top: 0;
+    z-index: 9;
+    box-sizing: border-box;
+    padding: .2rem;
+}
+
+.mobile-nav .mobile-nav-btn-black {
+    width: 1.2rem;
+    height: .56rem;
+    background-color: rgba(255, 255, 255, .35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav .mobile-nav-btn-black span {
+    color: #333333;
+    font-size: .28rem;
+    margin-left: .2rem;
+}
+
+.mobile-nav .mobile-nav-btn-black img {
+    width: .3rem;
+    height: .3rem;
+}
+
+.mobile-nav .mobile-close {
+    width: .9rem;
+    height: .9rem;
+    position: absolute;
+    top: -.15rem;
+    right: 0;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    display: none;
+}
+
+.mobile-nav .content {
+    width: 100%;
+    height: calc(100% - 1.8rem);
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.mobile-nav .content .row:first-child {
+    margin-top: .6rem;
+}
+
+.mobile-nav .content .row {
+    width: 100%;
+    display: block;
+    height: .88rem;
+    margin-bottom: .32rem;
+    box-sizing: border-box;
+    padding: .08rem;
+    padding-left: .4rem;
+    border-radius: .1rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.mobile-nav .content .row .menu-text {
+    display: inline-block;
+    position: relative;
+}
+
+.mobile-nav .content .row:active {
+    background-color: rgba(0,0,0,.1);
+}
+
+.mobile-nav .content .row .label {
+    color: #656E7D;
+    font-size: .28rem;
+    font-weight: bold;
+    padding: 0 .07rem;
+    text-decoration: none;
+}
+
+.mobile-nav .content .row .english {
+    color: #9BA2AE;
+    font-size: .16rem;
+    text-decoration: none;
+    display: block;
+}
+
+.mobile-nav .content .row .active .active {
+    width: 100%;
+    display: block;
+    height: .12rem;
+    background-color: #008DDC;
+    opacity: .4;
+    position: absolute;
+    top: .2rem;
+    left: 0;
+}

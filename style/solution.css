@@ -5,8 +5,16 @@
     font-size: 0;
 }
 
+.wrapper .logo {
+    width: 10.938vw;
+    height: 5.913vh;
+    position: absolute;
+    left: 1.042vw;
+    top: 2.112vh;
+}
+
 .wrapper .product-nav {
-    width: 36.302vw;
+    width: 26.042vw;
     height: 100%;
     display: inline-block;
     vertical-align: top;
@@ -135,91 +143,39 @@
     display: none;
 }
 
-
-.wrapper .logo {
-    width: 10.938vw;
-    height: 5.913vh;
-    position: absolute;
-    left: 1.042vw;
-    top: 2.112vh;
-}
-
-.wrapper .product-content {
-    width: calc(100% - 36.2vw - 3.1vw);
-    height: 100%;
-    display: inline-block;
-    overflow: auto;
-}
-
-.wrapper .product-block {
-    width: 20vw;
-    height: 38.015vh;
-    box-sizing: border-box;
+.page-right {
+    width: calc(100% - 27vw);
     display: inline-block;
     vertical-align: top;
-    overflow: hidden;
-    border-right: 1px solid #e8e8e8;
-    border-bottom: 1px solid #e8e8e8;
-    position: relative;
-    cursor: pointer;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 5.99vw;
 }
 
-.wrapper .product-block:hover .background-arc{
-    transform: scale(3, 3);
+.page-right .title {
+    font-size: 2.083vw;
+    line-height: 2.917vw;
+    color: #666F7E;
+    margin-top:  11.616vh;
 }
 
-.wrapper .product-block:nth-of-type(3n) {
-    border-right: none;
+.page-right .content {
+    width: 100%;
+    margin-top: 7.392vh;
+    animation: show .2s;
 }
 
-.wrapper .product-block-companyName {
-    color: #656E7D;
-    font-size: 0.729vw;
-    text-align: center;
-    margin-top: 4.752vh;
+@keyframes show {
+    from {
+        transform: translateY(.3rem);
+        opacity: 0;
+    }
+    to {}
 }
 
-.wrapper .product-block-deviceName {
-    color: #656E7D;
-    font-size: 0.938vw;
-    text-align: center;
-    margin-top: 1.69vh;
-}
-
-.wrapper .product-block-deviceImg {
-    width: 13.021vw;
-    height: 21.119vh;
-    margin: 0 auto;
-    margin-top: 1.056vh;
-}
-
-.wrapper .product-block-deviceImg img {
-    max-width: 13vw;
-    display: block;
-    margin: 0 auto;
-    max-height: 21.11vh;
-    transition: transform .2s linear;
-}
-
-.wrapper .product-block-deviceImg:hover img{
-    transform: translateY(5px);
-}
-
-.wrapper .product-block-deviceModel {
-    color: #ABB2BF;
-    font-size: 0.625vw;
-    text-align: center;
-}
-
-.wrapper .background-arc {
-    width: 13.542vw;
-    height: 27.455vh;
-    background-color: #E8EBF0;
-    border-radius: 50%;
-    position: absolute;
-    top: 2.640vh;
-    left: 50%;
-    margin-left: -6.771vw;
-    z-index: -1;
-    transition: transform .5s linear;
+.page-right .content p{
+    font-size: 0.833vw;
+    line-height: 1.563vw;
+    color: #666F7E;
+    margin-bottom: 2.112vh;
 }

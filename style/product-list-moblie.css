@@ -1,0 +1,202 @@
+.wrapper {
+    width: 100%;
+    height: calc(100% - 1rem);
+    font-size: 0;
+    background-color: #F5F5F5;
+}
+
+.wrapper .logo {
+    display: none;
+}
+
+.wrapper .mobile-nav-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    left: .18rem;
+    top: .16rem;
+}
+
+.mobile-nav-btn img {
+    width: .3rem;
+    height: .3rem;
+}
+
+.mobile-nav-btn span {
+    color: #333333;
+    font-size: .28rem;
+    margin-left: .1rem;
+}
+
+.wrapper .product-nav {
+    width: 100%;
+    height: 1.48rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top: .88rem;
+}
+
+.wrapper .product-nav .product-nav-content {
+    width: 100%;
+    min-height: .6rem;
+}
+
+.wrapper .product-nav .transparent {
+    display: none;
+}
+
+.wrapper .product-nav .none-block {
+    display: none;
+}
+
+.wrapper .product-nav .overflowauto {
+    width: 7.5rem;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
+.wrapper .product-nav .row {
+    color: #303133;
+    height: .6rem;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-decoration: none;
+}
+
+.wrapper .product-nav .row .label {
+    font-size: .24rem;
+    line-height: .34rem;
+    font-weight: bold;
+    padding: .13rem;
+    display: inline-block;
+    position: relative;
+}
+
+.wrapper .product-nav .row .more {
+    position: fixed;
+    top: 1.48rem;
+    left: 0;
+    width: 7.5rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 0 .2rem;
+}
+
+.wrapper .product-nav .row .more span {
+    font-size: .2rem;
+    color: #303133;
+    line-height: .52rem;
+    font-weight: bold;
+    padding: 0 .12rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: .28rem 0.08rem .15rem .08rem;
+    border: .5px solid #F5F5F5;
+}
+
+.wrapper .product-nav .row .more .activeSon {
+    border: .5px solid #2EB176;
+    box-sizing: border-box;
+    border-radius: .08rem;
+    color: #59AE7B;
+    background-color: #EEFFF5;
+}
+
+.wrapper .product-nav .active {
+    color: #399F62;
+    transition: color .2s linear;
+}
+
+.wrapper .product-nav .active .active {
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -35%;
+    height: .06rem;
+    background-color: #399F62;
+    border-radius: .02rem;
+    animation: show .2s;
+}
+
+@keyframes show {
+    from {
+        transform: translateY(.1rem);
+    }
+    to {}
+}
+
+.product-content {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 1.1rem;
+    height: calc(100% - 2.56rem);
+    box-sizing: border-box;
+    padding: 0 .16rem;
+    padding-top: .13rem;
+}
+
+.noMore {
+    height: calc(100% - 1.5rem);
+    margin-top: .02rem;
+}
+
+.product-content .product-block {
+    width: 2.32rem;
+    height: 3.2rem;
+    background-color: #fff;
+    border-radius: .08rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: .11rem;
+    margin-bottom: .16rem;
+    box-sizing: border-box;
+    padding: .12rem;
+    position: relative;
+}
+
+.product-content .product-block:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.product-content .product-block-deviceName {
+    width: 100%;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    color: #656E7D;
+    font-size: .24rem;
+    font-weight: bold;
+}
+
+.product-content .product-block-deviceModel {
+    color: #656E7D;
+    font-size: .2rem;
+    width: 100%;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    position: absolute;
+    top: .46rem;
+    left: 0;
+}
+
+.product-content .product-block-deviceImg {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    margin-top: .56rem;
+}
+
+.product-content .product-block-deviceImg img {
+    max-width: 100%;
+    max-height: 100%;
+}

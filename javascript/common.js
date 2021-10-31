@@ -1,11 +1,33 @@
+window._config_ = {
+    isMoblie: false,
+    map: {}
+}
+var _timer
 // 如果设备的宽度少于 1100 则初始化
 function setRem() {
     var device_width = document.documentElement.clientWidth
     if (device_width <= 1100) {
         var ratio =  device_width / 750 * 100
         $('html').css({ fontSize: ratio + 'px' })
+        window._config_.isMoblie = true
     }
+    if (_timer) clearTimeout(_timer)
+    _timer = setTimeout(function () {
+        runListFn()
+    }, 500)
 }
+
+/**
+ * config list 的函数在改变窗口时重置
+ */
+
+function runListFn () {
+    Object.keys(window._config_.map).forEach(function (key) {
+        if (typeof window._config_.map[key] !== 'function') return
+        window._config_.map[key]()
+    })
+}
+
 setRem()
 window.onresize = function () {
     setRem()

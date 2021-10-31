@@ -1,0 +1,114 @@
+.wrapper {
+    width: 100%;
+    height: calc(100% - 1rem);
+    font-size: 0;
+    background-color: #F5F5F5;
+}
+
+.wrapper .logo {
+    display: none;
+}
+
+.wrapper .product-nav {
+    width: 100%;
+    height: 1.72rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top: .88rem;
+}
+
+.wrapper .mobile-nav-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    left: .18rem;
+    top: .16rem;
+}
+
+.mobile-nav-btn img {
+    width: .3rem;
+    height: .3rem;
+}
+
+.mobile-nav-btn span {
+    color: #333333;
+    font-size: .28rem;
+    margin-left: .1rem;
+}
+
+.wrapper .product-nav-content {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+    padding-top: .12rem;
+}
+
+.wrapper .overflowauto {
+    width: 100%;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+    overflow-x: auto;
+    overflow-y: visible;
+    box-sizing: border-box;
+    padding: 0 .2rem;
+    overflow-y: hidden;
+}
+
+.wrapper .product-nav .row {
+    color: #303133;
+    height: .6rem;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-decoration: none;
+}
+
+.wrapper .product-nav .row .label {
+    font-size: .24rem;
+    line-height: .34rem;
+    font-weight: bold;
+    padding: .13rem;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border: .5px solid #fff;
+    overflow: hidden;
+}
+
+.wrapper .product-nav .active {
+    border: 1px solid #2EB176;
+    border-radius: .08rem;
+    color: #2EB176;
+    background: #EEFFF5;
+    box-sizing: border-box;
+}
+
+.wrapper .page-right {
+    width: 100%;
+    height: calc(100% - 1.72rem);
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: .3rem;
+}
+
+.wrapper .page-right .title {
+    font-size: .28rem;
+    color: #666F7E;
+    line-height: .4rem;
+    font-weight: bold;
+}
+
+.wrapper .page-right .content {
+    margin-top: .2rem;
+}
+
+.wrapper .page-right .content p {
+    font-size: .22rem;
+    line-height: .35rem;
+    color: #666F7E;
+    margin-bottom: .2rem;
+}

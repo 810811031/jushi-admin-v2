@@ -4,67 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-    <meta name="keywords" content="举世新能源">
+    <title>Document</title>
     <title>举世新能源</title>
     <link rel="stylesheet" media="all and (min-width: 1100px)" href="/style/common.css" />
-    <link rel="stylesheet" media="all and (min-width: 1100px)" href="/style/home.css" />
+    <link rel="stylesheet" media="all and (min-width: 1100px)" href="/style/partner.css" />
     <link rel="stylesheet" media="all and (max-width: 1100px)" href="/style/common-mobile.css" />
-    <link rel="stylesheet" media="all and (max-width: 1100px)" href="/style/home-moblie.css" />
-    <link rel="stylesheet" href="/common/swiper-7.0.8/swiper-bundle.min.css" />
-    <script src="/common/swiper-7.0.8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" media="all and (max-width: 1100px)" href="/style/partner-mobile.css" />
+    <script src="/common/echarts-5.2.1/index.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <!-- banner 轮播图 -->
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="/images/home-background.png" alt="banner" />
+        <div class="page-left">
+            <div class="title">举视合伙人</div>
+            <div class="content">
+                <p>与渠道商共同创业·与客户共同进步·与合伙人共享美好</p>
+                <p>举视充电作为著名充电桩品牌，目前平台上共有自建充电设备终端10万余个，覆盖全国200多个城市，日充电量约300万度。作为持续经营的充电运营服务商，举视充电诚邀您加入，将举视的充电桩带给更多人，进入更多的社区，共建“平安充电”的目标。</p>
+            </div>
+        </div>
+        <div class="page-right">
+            <div class="title">
+                充电站城市合伙人
+            </div>
+            <div class="subtitle">
+                通过成本运算，模拟后期收益，其他描述文案
+            </div>
+            <div class="inpit-wrapper">
+                <div class="box">
+                    <span class="label">场地费用(月租)</span>
+                    <input type="text" placeholder="请填写" />
+                    <span class="unit">元</span>
                 </div>
-                <div class="swiper-slide">
-                    <img src="/images/home-background.png" alt="banner" />
+                <div class="box">
+                    <span class="label">人工费用(月支出)</span>
+                    <input type="text" placeholder="请填写" />
+                    <span class="unit">元</span>
+                </div>
+                <div class="box">
+                    <span class="label">运营时长</span>
+                    <input type="text" placeholder="请填写" />
+                    <span class="unit">小时/天</span>
+                </div>
+                <div class="box">
+                    <span class="label">充电桩数量(直流)</span>
+                    <input type="text" placeholder="请填写" />
+                    <span class="unit">个</span>
+                </div>
+                <div class="box">
+                    <span class="label">充电桩数量(交流)</span>
+                    <input type="text" placeholder="请填写" />
+                    <span class="unit">个</span>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="btn">模拟收益</div>
+            <div id="charts-pc"></div>
+            <div id="charts-mobile"></div>
         </div>
-
-        <!-- logo -->
-        <div class="logo">
-            <img src="/images/logo-white@2x.png" alt="logo" />
-        </div>
-
-        <!-- 当前背景banner图的下角标 -->
-        <div class="swiper-index">
-            <div class="group">
-                <span class="arc active">
-                    <span>01</span>
-                </span>
-                <span class="arc-small"></span>
-                <span class="arc-small"></span>
-            </div>
-            <div class="group">
-                <span class="arc">
-                    <span>02</span>
-                </span>
-                <span class="arc-small"></span>
-                <span class="arc-small"></span>
-            </div>
-        </div>
-
-        <!-- 晃动的鼠标 -->
-        <img src="/images/icons/mouse.png" class="mouse" alt="mouse" />
 
         <!-- 菜单栏 -->
-        <div class="nav">
+        <div class="nav dark">
             <!-- 收起时的菜单栏 -->
             <div class="nav-inside">
                 <div class="menu">
                     <img src="/images/icons/menu.png" alt="menu" />
                     <span>菜单</span>
                 </div>
-                <a href="./productList.html" class="product-center">
-                    <span>产品中心</span>
-                </a>
             </div>
             <div class="nav-outside">
                 <img src="/images/icons/close.png" alt="close" class="close" />
@@ -110,7 +113,7 @@
                     <div class="content">
                         <a href="./home.html" class="row">
                             <div>
-                                <div class="menu-text active">
+                                <div class="menu-text">
                                     <span class="label">首页</span>
                                     <span class="grey"></span>
                                     <span class="active"></span>
@@ -140,7 +143,7 @@
                         </a>
                         <a href="./partner.html" class="row">
                             <div>
-                                <div class="menu-text">
+                                <div class="menu-text active">
                                     <span class="label">举视合伙人</span>
                                     <span class="grey"></span>
                                     <span class="active"></span>
@@ -171,15 +174,8 @@
                     </div>
                 </div>
             </div>
-            <div class="product"><span></span></div>
             <!-- 半透明遮罩层 -->
             <div class="mask"></div>
-        </div>
-
-        <!-- 移动端侧边的菜单 -->
-        <div class="mobile-nav-btn">
-            <img src="/images/mobile-icons/menu-while.png" alt="menu">
-            <span>菜单</span>
         </div>
 
         <!-- 移动端底部的导航 -->
@@ -202,12 +198,12 @@
             </a>
         </div>
 
-
         <!-- 底部注册信息 -->
         <footer>COPYRIGHT 2019举视（上海）新能源科技有限公司 All rights reserved<a href="https://beian.miit.gov.cn/#/Integrated/index">沪ICP备16035790号-1</a></footer>
+
     </div>
 </body>
 <script src="/common/jquery-1.8.3/jquery.js"></script>
 <script src="/javascript/common.js"></script>
-<script src="/javascript/home.js"></script>
+<script src="/javascript/partner.js"></script>
 </html>
