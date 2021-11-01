@@ -46,8 +46,9 @@ $('.menu').click(function () {
  */
 $('.mask').click(function () {
     $(this).fadeOut(150)
-    $('.nav-outside').animate({ right: '-60%' }, 300)
-    $('.mobile-nav').animate({ left: '-3.72rem' }, 300)
+    window._config_.isMoblie ?    
+        $('.mobile-nav').animate({ left: '-3.72rem' }, 300) :
+        $('.nav-outside').animate({ right: '-60%' }, 300)
 })
 
 /**

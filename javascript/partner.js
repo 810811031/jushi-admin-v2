@@ -3,7 +3,6 @@
 
 var initPcCharts = function () {
     var charts = echarts.init(document.getElementById('charts-pc'))
-    console.log(1234)
     var option = {
         title: {
             text: '收益模拟'
@@ -128,7 +127,6 @@ var initMoblieCharts = function () {
 if (window._config_.isMoblie) {
     initMoblieCharts()
 } else {
-    initPcCharts()
     if (!window._config_.map.initPcCharts) {
         window._config_.map.initPcCharts = initPcCharts
     }
