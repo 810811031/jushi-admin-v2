@@ -8,10 +8,10 @@ $('.row').click(function () {
     $('.row').removeClass('active')
     $('.row .more').slideUp(150)
     $(this).addClass('active')
-    $($(this).find('.more')).slideDown(150)
-    if ($($($(this).find('.more')).find('span:first'))) {
+    $(this).find('.more').slideDown(150)
+    if ($(this).find('.more').find('span:first')) {
         $(this).find('.more').find('span').removeClass('activeSon')
-        $($($(this).find('.more')).find('span:first')).addClass('activeSon')
+        $(this).find('.more').find('span:first').addClass('activeSon')
     }
     _moblie_nav_($(this))
 })

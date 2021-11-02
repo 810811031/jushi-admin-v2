@@ -21,6 +21,10 @@
     vertical-align: top;
 }
 
+.wrapper .page-left .mobile-p {
+    display: none;
+}
+
 .wrapper .page-left .title {
     color: #666F7E;
     font-size: 2.083vw;
