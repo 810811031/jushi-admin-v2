@@ -1,0 +1,40 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.wrapper .page-left {
+    width: 28.208vw;
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+.wrapper .page-left .title {
+    width: 20vw;
+    color: #666F7E;
+    font-size: 2.083vw;
+    line-height: 2.917vw;
+}
+
+.wrapper .page-left .detail {
+    width: 20vw;
+    color: #666F7E;
+    font-size: 0.938vw;
+    line-height: 1.302vw;
+    margin-top: 2.112vh;
+}
+
+.wrapper .page-right {
+    width: calc(100% - 32.3vw);
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}

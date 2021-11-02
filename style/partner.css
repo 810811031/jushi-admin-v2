@@ -67,12 +67,12 @@
     margin-top: 1.162vh;
 }
 
-.wrapper .page-right .inpit-wrapper {
+.wrapper .page-right .input-wrapper {
     width: 100%;
     margin-top: 3.801vh;
 }
 
-.wrapper .page-right .inpit-wrapper .box {
+.wrapper .page-right .input-wrapper .box {
     width: 20vw;
     height: 5.913vh;
     border-radius: 2.292vw;
@@ -87,11 +87,11 @@
     margin-bottom: 2.746vh;
 }
 
-.wrapper .page-right .inpit-wrapper .box:nth-of-type(3) {
+.wrapper .page-right .input-wrapper .box:nth-of-type(3) {
     margin-right: 0;
 }
 
-.wrapper .page-right .inpit-wrapper .box .label {
+.wrapper .page-right .input-wrapper .box .label {
     font-size: 0.833vw;
     color: #303133;
     line-height: 5.913vh;
@@ -100,13 +100,13 @@
     left: 1.042vw;
 }
 
-.wrapper .page-right .inpit-wrapper .box .unit {
+.wrapper .page-right .input-wrapper .box .unit {
     font-size: 0.833vw;
     color: #303133;
     line-height: 5.913vh;
 }
 
-.wrapper .page-right .inpit-wrapper .box input {
+.wrapper .page-right .input-wrapper .box input {
     width: 6.771vw;
     height: 100%;
     line-height: 5.913vh;
@@ -117,7 +117,7 @@
     background-color: #EDEFF1;
 }
 
-.wrapper .page-right .inpit-wrapper .box input::placeholder {
+.wrapper .page-right .input-wrapper .box input::placeholder {
     color: #56AB79;
     font-size: 0.729vw;
 }
@@ -139,4 +139,8 @@
     width: 64.5vw;
     height: 50.686vh;
     margin-top: 4.224vh;
+}
+
+.wrapper .charts-limit {
+    display: none;
 }
