@@ -145,9 +145,8 @@
     padding-top: .1rem;
     position: absolute;
     top: .88rem;
-    left: 0;
+    left: 100%;
     background-color: #fff;
-    display: none;
 }
 
 .wrapper .charts-limit .inside {

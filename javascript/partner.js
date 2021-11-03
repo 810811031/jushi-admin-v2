@@ -265,10 +265,10 @@ if (window._config_.isMoblie) {
 }
 
 $('.reset').click(function () {
-    $('.charts-limit').fadeOut()
+    $('.charts-limit').animate({ left: '100%' })
 })
 
 $('.btn').click(function () {
-    $('.charts-limit').fadeIn()
+    $('.charts-limit').animate({ left: '0' })
     initMoblieCharts()
 })
