@@ -1,0 +1,135 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.wrapper .logo {
+    display: none;
+}
+
+.wrapper .mobile-nav-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: .3rem;
+    top: .16rem;
+}
+
+.mobile-nav-btn img {
+    width: .3rem;
+    height: .3rem;
+}
+
+.mobile-nav-btn span {
+    color: #333333;
+    font-size: .28rem;
+    margin-left: .1rem;
+}
+
+.wrapper .page-left {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 .28rem;
+    padding-top: .88rem;
+    background-color: #fff;    
+}
+
+.wrapper .page-left .title {
+    font-size: .28rem;
+    color: #666F7E;
+    font-weight: bold;
+}
+
+.wrapper .page-left .detail {
+    font-size: .22rem;
+    color: #666F7E;
+    line-height: .32rem;
+    margin-top: .08rem;
+}
+
+.wrapper .page-left .detail:nth-of-type(3) {
+    display: none;
+}
+
+.wrapper .page-right {
+    width: 100%;
+    background-color: #fff;
+    margin-top: .44rem;
+    box-sizing: border-box;
+    padding: 0 .28rem;
+}
+
+.wrapper .page-right .box-wrapper {
+    width: 100%;
+}
+
+.wrapper .page-right .box {
+    width: 100%;
+    display: block;
+    height: 2.56rem;
+    border-radius: .08rem;
+    margin-bottom: .2rem;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    padding: .2rem;
+}
+
+.wrapper .page-right .box img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.wrapper .page-right .box .box-mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wrapper .page-right .box .title {
+    font-size: .28rem;
+    color: #fff;
+    line-height: .4rem;
+    position: absolute;
+    top: .2rem;
+    left: .2rem;
+    z-index: 2;
+    font-weight: 500;
+}
+
+.wrapper .page-right .box .description {
+    margin-top: .2rem;
+    color: #fff;
+    width: 5.56rem;
+    line-height: .32rem;
+    font-size: .22rem;
+    position: absolute;
+    top: .6rem;
+    left: .2rem;
+    z-index: 2;
+}
+
+.wrapper .page-right .box .moblie-enter {
+    position: absolute;
+    right: .2rem;
+    bottom: .2rem;
+    z-index: 2;
+    width: 1.96rem;
+    height: .64rem;
+    border-radius: .04rem;
+    text-align: center;
+    line-height: .64rem;
+    background: linear-gradient(260deg, #6ACD79 0%, #399F62 100%);
+    font-size: .28rem;
+    color: #fff;
+}

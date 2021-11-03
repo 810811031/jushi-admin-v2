@@ -1,0 +1,40 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 0;
+    position: relative;
+}
+
+.wrapper .logo {
+    width: 10.938vw;
+    height: 5.913vh;
+    position: absolute;
+    top: 2.112vh;
+    left: 2.083vw;
+    z-index: 10;
+}
+
+.wrapper .mobile-close {
+    display: none;
+}
+
+.wrapper .logo img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.wrapper .page-left {
+    width: 25.208vw;
+    height: 100%;
+    display: inline-flex;
+    vertical-align: top;
+    box-sizing: border-box;
+    border-right: 1px solid #e8e8e8;
+}
+
+
+.wrapper .page-right {
+
+}

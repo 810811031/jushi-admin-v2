@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.wrapper .logo {
+    display: none;
+}
+
 .wrapper #charts-pc {
     display: none;
 }
