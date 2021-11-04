@@ -256,7 +256,7 @@ var initMoblieCharts = function () {
 }
 
 
-if (window._config_.isMoblie) {
+if (window._config_.isMobile) {
     initMoblieCharts()
 } else {
     if (!window._config_.map.initPcCharts) {

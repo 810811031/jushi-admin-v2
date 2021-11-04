@@ -94,21 +94,32 @@
 }
 
 .wrapper .page-right {
-    width: calc(100% - 30.208vw);
+    width: calc(100% - 28.7vw);
+    overflow-y: auto;
     height: 100%;
     display: inline-block;
     vertical-align: top;
+    animation: show .2s;
     box-sizing: border-box;
-    padding-left: 3.125vw;
     padding-top: 5.616vh;
+    padding-bottom: 4vh;
     animation: show .2s;
 }
 
+@keyframes show {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {}
+}
+
 .wrapper .page-right .title {
-    font-weight: 600;
+    font-weight: 500;
     color: #666F7E;
     font-size: 2.083vw;
     line-height: 2.917vw;
+    text-align: center;
 }
 
 .wrapper .page-right .sub-title {
@@ -117,29 +128,85 @@
     font-size: 1.25vw;
     line-height: 1.719vw;
     margin-top: 1.056vh;
+    text-align: center;
 }
 
-.wrapper .page-right p {
-    font-size: 0.833vw;
-    line-height: 1.146vw;
-    font-weight: 500;
-    color: #9097A1;
-    margin-top: 3.069vh;
+.wrapper .page-right .swiper {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3.907vh;
 }
 
-.wrapper .page-right .indent {
-    text-indent: 2em;
+.wrapper .page-right .swiper img {
+    height: 33.052vh;
 }
 
-.wrapper .page-right video {
-    width: 31.615vw;
-    height: 38.226vh;
-    margin-top: 2.851vh;
+.wrapper .page-right .box-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3.224vh;
+}
+
+.wrapper .page-right .box {
+    width: 20.052vw;
+    height: 23.548vh;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: .3vw;
+    box-shadow: 0 0 0.781vw rgba(0,0,0,.15);
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1.667vw;
+    margin-bottom: 4.224vh;
+}
+
+.wrapper .page-right .box:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.wrapper .page-right .box .info {
+    width: 10.885vw;
+    height: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .page-right .box .title {
+    width: 100%;
+    font-size: 1.042vw;
+    line-height: 1.458vw;
+    color: #666F7E;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+
+.wrapper .page-right .box .description {
+    color: #666F7E;
+    font-size: 0.729vw;
+    line-height: 1.042vw;
+}
+
+.wrapper .page-right .box img {
+    height: 100%;
+    margin-right: .7vw;
+    display: inline-block;
+}
+
+.wrapper .page-right .box .date {
+    width: 100%;
+    color: #A6AFBF;
+    font-size: 0.625vw;
+    line-height: 0.885vw;
 }
 
 @keyframes show {
-    from {
-        transform: translateY(-20px);
+    form {
+        transform: translate(30px);
         opacity: 0;
     }
     to {}

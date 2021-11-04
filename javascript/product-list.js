@@ -26,7 +26,7 @@ $('.more span').click(function (event) {
  * 如果是移动端样式则运行下列代码
  */
 var _moblie_nav_ = function (row) {
-    if (!window._config_.isMoblie || !row) return
+    if (!window._config_.isMobile || !row) return
     if (row.find('.more').length == 1) {
         $('.product-content').removeClass('noMore')
     } else {
@@ -34,7 +34,7 @@ var _moblie_nav_ = function (row) {
     }
     
 }
-if (window._config_.isMoblie) {
+if (window._config_.isMobile) {
     if (!window._config_.map._moblie_nav_) {
         window._config_.map._moblie_nav_ = _moblie_nav_
     }

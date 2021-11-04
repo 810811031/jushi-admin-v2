@@ -1,5 +1,5 @@
 window._config_ = {
-    isMoblie: false,
+    isMobile: false,
     map: {}
 }
 var _timer
@@ -9,7 +9,7 @@ function setRem() {
     if (device_width <= 1100) {
         var ratio =  device_width / 750 * 100
         $('html').css({ fontSize: ratio + 'px' })
-        window._config_.isMoblie = true
+        window._config_.isMobile = true
     }
     if (_timer) clearTimeout(_timer)
     _timer = setTimeout(function () {
@@ -46,7 +46,7 @@ $('.menu').click(function () {
  */
 $('.mask').click(function () {
     $(this).fadeOut(150)
-    window._config_.isMoblie ?    
+    window._config_.isMobile ?    
         $('.mobile-nav').animate({ left: '-3.72rem' }, 300) :
         $('.nav-outside').animate({ right: '-60%' }, 300)
 })

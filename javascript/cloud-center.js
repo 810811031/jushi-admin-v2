@@ -1,4 +1,4 @@
-if (!window._config_.isMoblie) {
+if (!window._config_.isMobile) {
     $('.box').mouseenter(function () {
         $('.box').css({ width: '20%' })
         $(this).css({ width: '40%' })
