@@ -65,10 +65,6 @@
     display: none;
 }
 
-.swiper-slide {
-    cursor: pointer;
-}
-
 .wrapper .page-left .row .grey {
     width: 0;
     height: 1.584vh;
@@ -136,104 +132,121 @@
     text-align: center;
 }
 
-.wrapper .page-right .swiper {
-    width: 90%;
+.wrapper .page-right .content {
+    width: 61.979vw;
     margin: 0 auto;
-    margin-top: 3.907vh;
-}
-
-.wrapper .page-right .swiper img {
-    height: 33.052vh;
-}
-
-.wrapper .page-right .box-wrapper {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 3.224vh;
-}
-
-.wrapper .page-right .box {
-    width: 20.052vw;
-    height: 23.548vh;
-    background-color: #fff;
-    box-sizing: border-box;
-    padding: 20px;
-    border-radius: .3vw;
-    box-shadow: 0 0 0.781vw rgba(0,0,0,.15);
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 1.667vw;
-    margin-bottom: 4.224vh;
-    cursor: pointer;
-}
-
-.wrapper .page-right .box:nth-of-type(3n) {
-    margin-right: 0;
-}
-
-.wrapper .page-right .box .info {
-    width: 10.885vw;
-    height: 100%;
-    display: inline-flex;
+    margin-top: 4.224vh;
+    display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
 }
 
-.wrapper .page-right .box .title {
+.wrapper .page-right .content .block {
+    width: 5.99vw;
+    min-height: 60vh;
+}
+
+.wrapper .page-right .step {
     width: 100%;
-    font-size: 1.042vw;
-    line-height: 1.458vw;
-    color: #666F7E;
-    overflow: hidden; 
-    white-space: nowrap; 
-    text-overflow: ellipsis;
+    height: 10.56vh;
+    position: relative;
 }
 
-.wrapper .page-right .box .description {
-    color: #666F7E;
+.wrapper .page-right .step .date {
+    color: #858C98;
     font-size: 0.729vw;
     line-height: 1.042vw;
+    font-weight: 500;
 }
 
-.wrapper .page-right .box img {
-    height: 100%;
-    margin-right: .7vw;
+.wrapper .page-right .step .big {
+    width: 1.25vw;
+    height: 2.534vh;
+    border-radius: 50%;
+    background-color: rgba(198, 203, 213, .3);
+    display: inline-flex;
+    position: absolute;
+    top: 2.534vh;
+    left: 0.521vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .page-right .step .small {
+    width:  0.625vw;
+    height: 1.267vh;
+    border-radius: 50%;
     display: inline-block;
-}
-
-.wrapper .page-right .box .date {
-    width: 100%;
-    color: #A6AFBF;
-    font-size: 0.625vw;
-    line-height: 0.885vw;
-}
-
-.wrapper .page-right .preview {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.4);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 19;
-    display: none;
-}
-
-.wrapper .page-right .preview img {
-    max-width: 32.448vw;
-    max-height: 89.652vh;
+    background-color: #C6CBD5;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-@keyframes show {
-    form {
-        transform: translate(30px);
-        opacity: 0;
-    }
-    to {}
+.wrapper .page-right .step .lineDown {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 6.6vh;
+    background-color: #C6CBD5;
+    top: 4vh;
+    left: 1.146vw;
+}
+
+.wrapper .page-right .step .lineUp {
+    display: block;
+    position: absolute;
+    width: 8.7vw;
+    height: 2px;
+    background-color: #C6CBD5;
+    top: 3.75vh;
+    left: 1.146vw;
+}
+
+.wrapper .page-right .step .none {
+    width: 3vw;
+}
+
+.wrapper .page-right .step .active {
+    background-color: rgba(148, 183, 253, .3);
+    z-index: 4;
+}
+
+.wrapper .page-right .step .active .small {
+    background-color: #94B7FD;
+    z-index: 4;
+}
+
+.wrapper .page-right .box {
+    width: 5.99vw;
+    box-sizing: border-box;
+    border-radius: 0.208vw;
+    padding: 0.422vh 0.208vw;
+    border: 1px solid #C6CBD5;
+    background-color: #fff;
+    margin-bottom: 1.901vh;
+    position: relative;
+}
+
+.wrapper .page-right .box .name {
+    font-size: 0.729vw;
+    line-height: 1.042vw;
+    color: #666F7E;
+    display: block;
+}
+
+.wrapper .page-right .box .description {
+    color: #B8BBC1;
+    font-size: 0.729vw;
+    line-height: 1.042vw;
+}
+
+.wrapper .page-right .box .box-line {
+    width: 1px;
+    height: 2vh;
+    background-color: #C6CBD5;
+    display: inline-block;
+    position: absolute;
+    bottom: -2vh;
+    left: 1.146vw;
 }

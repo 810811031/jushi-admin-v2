@@ -17,4 +17,31 @@ if (!window._config_.isMobile) {
             el: '.swiper-pagination',
         },
     })
+
+    $('.swiper-slide').click(function () {
+        var src = $(this).find('img').attr('src')
+        $('.preview img').attr('src', src)
+        $('.preview').fadeIn()
+    })
+
+    $('.preview').click(function () {
+        $(this).fadeOut(150)
+    })
+
+    $('.box').click(function () {
+        var src = $(this).find('img').attr('src')
+        $('.preview img').attr('src', src)
+        $('.preview').fadeIn()
+    })
+
+} else {
+    $('.box').click(function () {
+        var src = $(this).find('img').attr('src')
+        $('.preview img').attr('src', src)
+        $('.preview').fadeIn(150)
+    })
+
+    $('.preview').click(function () {
+        $(this).fadeOut(150)
+    })
 }

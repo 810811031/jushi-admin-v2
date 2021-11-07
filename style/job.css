@@ -127,113 +127,27 @@
     text-align: center;
 }
 
-.wrapper .page-right .sub-title {
-    font-weight: 500;
-    color: #666F7E;
-    font-size: 1.25vw;
-    line-height: 1.719vw;
-    margin-top: 1.056vh;
-    text-align: center;
-}
-
-.wrapper .page-right .swiper {
-    width: 90%;
+.wrapper .page-right .description {
+    width: 57.292vw;
+    font-size: 0.938vw;
+    color: #656E7D;
     margin: 0 auto;
-    margin-top: 3.907vh;
+    margin-top: 5.808vh;
 }
 
-.wrapper .page-right .swiper img {
-    height: 33.052vh;
-}
-
-.wrapper .page-right .box-wrapper {
-    width: 90%;
+.wrapper .page-right .navs {
+    width: 60.156vw;
     margin: 0 auto;
-    margin-top: 3.224vh;
+    height: 6.441vh;
+    overflow-x: auto;
+    margin-top:  8.448vh;
 }
 
-.wrapper .page-right .box {
-    width: 20.052vw;
-    height: 23.548vh;
-    background-color: #fff;
-    box-sizing: border-box;
-    padding: 20px;
-    border-radius: .3vw;
-    box-shadow: 0 0 0.781vw rgba(0,0,0,.15);
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 1.667vw;
-    margin-bottom: 4.224vh;
-    cursor: pointer;
-}
-
-.wrapper .page-right .box:nth-of-type(3n) {
-    margin-right: 0;
-}
-
-.wrapper .page-right .box .info {
-    width: 10.885vw;
+.wrapper .page-right .navs .box {
     height: 100%;
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-
-.wrapper .page-right .box .title {
-    width: 100%;
-    font-size: 1.042vw;
-    line-height: 1.458vw;
-    color: #666F7E;
-    overflow: hidden; 
-    white-space: nowrap; 
-    text-overflow: ellipsis;
-}
-
-.wrapper .page-right .box .description {
-    color: #666F7E;
-    font-size: 0.729vw;
-    line-height: 1.042vw;
-}
-
-.wrapper .page-right .box img {
-    height: 100%;
-    margin-right: .7vw;
+    background-color: #399F62;
+    min-width: 8.177vw;
+    border-radius: 0.417vw;
     display: inline-block;
-}
-
-.wrapper .page-right .box .date {
-    width: 100%;
-    color: #A6AFBF;
-    font-size: 0.625vw;
-    line-height: 0.885vw;
-}
-
-.wrapper .page-right .preview {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.4);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 19;
-    display: none;
-}
-
-.wrapper .page-right .preview img {
-    max-width: 32.448vw;
-    max-height: 89.652vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@keyframes show {
-    form {
-        transform: translate(30px);
-        opacity: 0;
-    }
-    to {}
+    margin-right: 2.083vw;
 }
