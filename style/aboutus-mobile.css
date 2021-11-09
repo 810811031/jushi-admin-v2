@@ -89,8 +89,33 @@
     padding: .2rem;
 }
 
+.wrapper .page-right .content {
+    width: 100%;
+    border-bottom: .5px solid #ccc;
+}
+
+.wrapper .page-right .content .block {
+    width: 100%;
+    margin-top: .2rem;
+}
+
+.wrapper .page-right .content .block div {
+    font-size: .28rem;
+    color: #666F7E;
+    line-height: .35rem;
+    margin-bottom: .1rem;
+    font-weight: bold;
+}
+
+.wrapper .page-right .content .block p {
+    color: #666F7E;
+    font-size: .22rem;
+    line-height: .5rem;
+}
+
 .wrapper .page-right .navs {
     width: 100%;
+    margin-top: .2rem;
     height: .52rem;
 }
 
@@ -98,6 +123,7 @@
     width: 100%;
     white-space: nowrap;
     overflow: auto;
+    border-bottom: none;
 }
 
 .wrapper .page-right .navs .content .box {
@@ -120,9 +146,17 @@
 .wrapper .page-right .contentwrap {
     width: 100%;
     margin-top: .2rem;
-    height: calc(100% - .72rem);
     overflow: auto;
     color: #666F7E;
     font-size: .22rem;
     line-height: .32rem;
+    background-color: #fff;
+    display: none;
+    box-sizing: border-box;
+    padding: .2rem;
+    border-radius: .1rem;
+}
+
+.wrapper .page-right .contentwrap p {
+    line-height: .45rem;
 }

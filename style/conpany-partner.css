@@ -65,10 +65,6 @@
     display: none;
 }
 
-.swiper-slide {
-    cursor: pointer;
-}
-
 .wrapper .page-left .row .grey {
     width: 0;
     height: 1.584vh;
@@ -127,97 +123,20 @@
     text-align: center;
 }
 
-.wrapper .page-right .description {
-    width: 57.292vw;
-    font-size: 0.938vw;
-    color: #656E7D;
+.wrapper .page-right .echarts {
+    width: 60vw;
     margin: 0 auto;
-    margin-top: 5.808vh;
+    height: 100vh;
 }
 
-.wrapper .page-right .navs {
-    width: 60.156vw;
+.wrapper .page-right .imgs {
+    width: 65.104vw;
     margin: 0 auto;
-    height: 6.441vh;
-    margin-top:  8.448vh;
-    position: relative;
 }
 
-.wrapper .page-right .navs .content {
-    width: 59vw;
-    margin: 0 auto;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 0 .2rem;
-}
-
-.wrapper .page-right .navs .content .inside {
-    white-space: nowrap;
-    overflow-x: auto;
-}
-
-.wrapper .page-right .navs .content::-webkit-scrollbar {
-    width: 0;
-}
-
-.wrapper .page-right .navs .btn {
-    width: 1vw;
-    height: 6.441vh;
-    position: absolute;
-    top: 0;
-    cursor: pointer;
-    transition: all .2s linear;
-}
-
-.wrapper .page-right .navs .btn:hover {
-    background-color: rgba(57, 159, 98, 1);
-}
-
-.wrapper .page-right .navs .left {
-    left: -1vw;
-    border-radius: .3vw 0 0 .3vw;
-    background: url(/images/icons/left.png) no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-color: rgba(57, 159, 98, .29);
-}
-
-.wrapper .page-right .navs .right {
-    right: -1vw;
-    border-radius: 0 .3vw .3vw 0;
-    background: url(/images/icons/right.png) no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-color: rgba(57, 159, 98, .29);
-}
-
-.wrapper .page-right .navs .box {
-    height: 100%;
-    background-color: rgba(57, 159, 98, .29);
-    min-width: 8.177vw;
-    border-radius: 0.417vw;
-    display: inline-block;
-    margin-right: 2.083vw;
-    font-size: 0.938vw;
-    text-align: center;
-    line-height: 6.441vh;
-    color: #fff;
-    cursor: pointer;
-    transition: all .2s linear;
-}
-
-.wrapper .page-right .navs .active {
-    background-color: #399F62;
-}
-
-.wrapper .page-right .contentwrap {
-    width: 60.156vw;
-    margin: 4vh auto;
-    height: 38.015vh;
-    background-color: #E6F5F2;
-    box-sizing: border-box;
-    padding: 7.392vh 2.396vw;
-    font-size: 0.938vw;
-    line-height: 1.146vw;
-    color: #656E7D;
+.wrapper .page-right .imgs img {
+    width: 12vw;
+    border: 1px solid #ccc;
+    margin-left: .5vw;
+    margin-bottom: 1vh;
 }

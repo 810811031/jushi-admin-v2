@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-    <title>公司简介</title>
+    <title>合作伙伴</title>
     <link rel="stylesheet" media="all and (min-width: 1100px)" href="/style/common.css" />
-    <link rel="stylesheet" media="all and (min-width: 1100px)" href="/style/synopsis.css" />
+    <link rel="stylesheet" media="all and (min-width: 1100px)" href="/style/conpany-partner.css" />
     <link rel="stylesheet" media="all and (max-width: 1100px)" href="/style/common-mobile.css" />
-    <link rel="stylesheet" media="all and (max-width: 1100px)" href="/style/synopsis-mobile.css" />
+    <link rel="stylesheet" media="all and (max-width: 1100px)" href="/style/conpany-partner-mobile.css" />
+    <script src="/common/echarts-5.2.1/index.js"></script>
+    <script src="/common/echarts-5.2.1/china.js"></script>
 </head>
 <body>
     <div class="wrapper">
-
         <a href="../home.html"><img src="/images/logo-grey@2x.png" alt="举视logo" class="logo" /></a>
 
         <div class="page-left">
             <div class="content">
-                <a href="./synopsis.html" class="row active">
+                <a href="./synopsis.html" class="row">
                     <span class="label">公司简介</span>
                     <span class="blue"></span>
                     <span class="grey"></span>
@@ -42,7 +43,7 @@
                     <span class="blue"></span>
                     <span class="grey"></span>
                 </a>
-                <a href="./partner.html" class="row">
+                <a href="./partner.html" class="row active">
                     <span class="label">合作伙伴</span>
                     <span class="blue"></span>
                     <span class="grey"></span>
@@ -51,14 +52,24 @@
         </div>
 
         <div class="page-right">
-            <div class="title">举视新能源</div>
-            <div class="sub-title">公司口号文案巴拉巴拉巴拉巴啦巴拉巴拉</div>
-            <p>举视（上海）新能源科技有限公司成立于新能源汽车发展元年，是一家集新能源汽车充电设备研发、生产、销售、安装服务为一体的综合性科技企业。</p>
-            <p class="indent">公司秉持“精益求精·敬天爱人”的企业宗旨，坚持在新能源汽车充电领域发展，为客户提供新能源汽车充电设备与充电整体解决方案，服务于充电运营商，为国家新能源新基建计划作服务。迎合党中央新基建号召的发展机遇，迅速成长为新能源汽车充电服务领域的一支生力军。</p>
-            <p class="indent">公司现有专利25项，其中外观专利18项，结构实用新型专利7项，获得CQC检验认证、CE认证，拥有一个控制软件著作权，一个平台服务软件著作权</p>
-            <p class="indent">公司总部位于素有“东方巴黎”美称的上海市青浦区E通世界园区，地理位置优越，距离上海虹桥国际机场15分钟车程。配套工厂在美丽的园林城市江苏省昆山市，有着占地超过5000平方米，配套设施齐全，设备先进的的生产车间。</p>
-            <p class="indent">举视新能源，期待与您共同进步，共享美好！</p>
-            <video controls="controls" autoplay="autoplay" src="http://www.sowellchina.com/template/default/video/video1.mp4"></video>
+            <div class="title">合作伙伴</div>
+            <div class="echarts" id="echarts"></div>
+            <div class="imgs">
+                <a href="https://www.bgy.com.cn/"><img src="/images/partner/1.jpg" alt="company" /></a>
+                <a href="http://www.hy-online.com/"><img src="/images/partner/2.jpg" alt="company" /></a>
+                <a href="http://www.potevio.com/"><img src="/images/partner/3.jpg" alt="company" /></a>
+                <a href="http://www.sgcc.com.cn/"><img src="/images/partner/4.jpg" alt="company" /></a>
+                <a href="http://www.whdonde.com/"><img src="/images/partner/5.jpg" alt="company" /></a>
+                <a href="http://www.titan21.com/dichan/"><img src="/images/partner/6.jpg" alt="company" /></a>
+                <a href="https://www.cifi.com.cn/"><img src="/images/partner/7.jpg" alt="company" /></a>
+                <a href="https://www.evergrande.com/"><img src="/images/partner/8.jpg" alt="company" /></a>
+                <a href="https://www.audi.cn/cn/web/zh.html?csref=sea:baidu:bc:baidu_sem_20200923:a:baidu:baidu.com"><img src="/images/partner/9.jpg" alt="company" /></a>
+                <a href="https://www.bmw.com.cn/zh/index.html?mz_ca=2212932&mz_sp=7jnaj&mz_kw=32694439&mz_cm=1288?bd_vid=10399172614461128642"><img src="/images/partner/10.jpg" alt="company" /></a>
+                <a href="https://www.landrover.com.cn/index.html"><img src="/images/partner/11.jpg" alt="company" /></a>
+                <a href="https://www.ldjt.com.cn/"><img src="/images/partner/12.jpg" alt="company" /></a>
+                <a href="http://www.timesgroup.cn/"><img src="/images/partner/13.jpg" alt="company" /></a>
+                <a href="https://www.vanke.com/"><img src="/images/partner/14.jpg" alt="company" /></a>
+            </div>
         </div>
 
         <!-- 菜单栏 -->
@@ -191,5 +202,5 @@
 </body>
 <script src="/common/jquery-1.8.3/jquery.js"></script>
 <script src="/javascript/common.js"></script>
-<script src="/javascript/synopsis.js"></script>
+<script src="/javascript/conpany-partner.js"></script>
 </html>
