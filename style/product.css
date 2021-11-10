@@ -28,17 +28,73 @@
 .wrapper .page-left {
     width: 53.542vw;
     height: 100%;
-    background-color: #69c;
-    opacity: .2;
     display: inline-block;
     vertical-align: top;
+    overflow: hidden;
+    position: relative;
 }
 
+.wrapper .page-left .arc {
+    width: 80%;
+    height: 15vh;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #71E898 , #5AB8FB);
+    position: absolute;
+    bottom: 6.336vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.wrapper .page-left .arc .inside {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border-radius: 50%;
+    background-color: #fff;
+}
 
+.wrapper .page-left .arc1 {
+    width: 60%;
+    height: 10vh;
+    border-radius: 50%;
+    bottom: 9.336vh;
+}
 
+.wrapper .page-left img {
+    width: 30.042vw;
+}
 
+.swiper-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10%;
+    height: 80%;
+}
+.swiper-slide {
+    text-align: center;
+    background: #fff;
 
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 300ms;
+    transform: scale(0.6);
+  }
+  .swiper-slide-active,.swiper-slide-duplicate-active{
+    transform: scale(1.3);
+  }
 
 .wrapper .page-right {
     width: calc(100% - 57.7vw);
@@ -69,4 +125,57 @@
     font-size: 1.042vw;
     color: #848B97;
     margin-left: 0.313vw;
+}
+
+.wrapper .page-right .title {
+    font-size: 2.083vw;
+    line-height: 2.917vw;
+    font-weight: 600;
+    color: #656E7D;
+}
+
+.wrapper .page-right .normal {
+    color: #656E7D;
+    font-size: 0.729vw;
+    line-height: 1.042vw;
+    margin-top: 0.521vh;
+}
+
+.wrapper .page-right .text-content {
+    color: #656E7D;
+    font-size: 0.729vw;
+    line-height: 1.042vw;
+    margin-top: 2.851vh;
+}
+
+.wrapper .page-right .do {
+    width: 15.156vw;
+    margin-top: 8.448vh;
+    height: 6.441vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .page-right .do .detail {
+    color: #0B90DA;
+    font-size: 0.781vw;
+    line-height: 1.094vw;
+    text-decoration: underline;
+}
+
+.wrapper .page-right .do .btn {
+    width: 8.177vw;
+    height: 100%;
+    background-color: #399F62;
+    text-align: center;
+    line-height: 6.441vh;
+    font-size: 0.938vw;
+    color: #fff;
+    border-radius: .3vw;
+    cursor: pointer;
+}
+
+.wrapper .page-right .do .btn:hover {
+    opacity: .8;
 }
