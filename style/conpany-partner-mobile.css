@@ -1,0 +1,139 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+    font-size: 0;
+}
+
+.wrapper .logo {
+    display: none;
+}
+
+.wrapper .mobile-nav-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: .3rem;
+    top: .16rem;
+}
+
+.mobile-nav-btn img {
+    width: .3rem;
+    height: .3rem;
+}
+
+.mobile-nav-btn span {
+    color: #333333;
+    font-size: .28rem;
+    margin-left: .1rem;
+}
+
+.wrapper .page-left {
+    width: 100%;
+    background-color: #fff;
+    height: 1.68rem;
+    box-sizing: border-box;
+    padding-top: .88rem;
+    overflow-y: auto;
+    box-shadow: 0 0 .05rem rgba(0,0,0,.1);
+}
+
+.wrapper .page-left .content {
+    white-space: nowrap;
+    padding: 0 .2rem
+}
+
+.wrapper .page-left .content .row {
+    width: 1.6rem;
+    height: .6rem;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+}
+
+.wrapper .page-left .content .row .label {
+    font-size: .24rem;
+    color: #303133;
+    line-height: .6rem;
+    font-weight: 500;
+}
+
+.wrapper .page-left .content .row .blue {
+    width: .72rem;
+    height: .06rem;
+    background-color: #399F62;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .03rem;
+    display: none;
+}
+
+.wrapper .page-left .content .active .blue {
+    display: block;
+}
+
+.wrapper .page-left .content .active .label {
+    color: #399F62;
+}
+
+.wrapper .page-right {
+    width: 100%;
+    height: calc(100% - 1.68rem);
+    box-sizing: border-box;
+    overflow-y: auto;
+    padding: .2rem;
+}
+
+.wrapper .page-right .echarts {
+    width: 100%;
+    height: 6.4rem;
+}
+
+.wrapper .page-right .partner-detail {
+    width: 100%;
+    min-height: 2.5rem;
+    padding: .2rem;
+    box-sizing: border-box;
+    border-radius: .08rem;
+    background-color: rgba(31, 45, 61, .75);
+    position: relative;
+}
+
+.wrapper .page-right .partner-detail .partner-title {
+    font-size: .28rem;
+    height: .35rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: .2rem;
+}
+
+.wrapper .page-right p {
+    font-size: .28rem;
+    line-height: .35rem;
+    color: #fff;
+    margin-bottom: .1rem;
+    width: calc(100% - 2rem);
+}
+
+.wrapper .page-right .partner-detail img {
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+    position: absolute;
+    right: .2rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+.wrapper .page-right .imgs {
+    width: 100%;
+    margin-top: .2rem;
+}
+
+.wrapper .page-right .imgs img {
+    width: 33%;
+}

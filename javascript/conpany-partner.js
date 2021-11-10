@@ -1,67 +1,172 @@
-console.log(_china)
-
 var container = document.getElementById('echarts')
 var myChartChina = echarts.init(container)
-echarts.registerMap('china', _china)
+echarts.registerMap('china', china)
 
-var optionMap = {
-    color:"#CAE6FF",
-    selectedMode: 'single',
-    grid: {
-        top: '4%',
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    series : [
-        {
-            name: '',
-            type: 'map',
-            mapType: 'china',
-            selectedMode: 'multiple',
-            itemStyle: {
-                normal:{
-                    borderColor: 'rgba(0, 0, 0, 0.1)',
-                    borderWidth:1,
-                    borderColor:'#e1e1e1',
-                    areaStyle: {
-                        color: '#red',//默认的地图板块颜色
+var place = ["上海", "浙江", "北京", "河南", "安徽", "江苏", "山东", "福建"]
+
+var all = {
+    "options": [{
+        "series": [{
+            "data": [ {
+                "name": "上海",
+                "value": "<p>合伙人： JUSHI-Partner</p><p>联系电话：888888888</p><p style='width: 200px;'>地址：情地址详情地址详情地<br />址详情地址详情</p><img style='width: 150px;height: 150px;position: absolute;top: 5px; right:5px' src='/images/qr.png' />",
+                "itemStyle": {
+                    "emphasis": {
+                        "areaColor": "#FF7B63"
                     },
-                },
-                emphasis:{
-                    shadowOffsetX: 0,
-                    shadowOffsetY: 0,
-                    shadowBlur: 20,
-                    borderWidth: 0,
-                    shadowColor: 'rgba(0, 0, 0, 0.15)'
-                },
-            },
-            showLegendSymbol: true,
-            label: {
-                normal: {  
-                    show: true,
-                    textStyle: {
-                        fontSize: 12,
-                        color: '#666'
+                    "normal": {
+                        "areaColor": "#FF7B63"
                     }
-                },
-                emphasis: {
-                    show: true
                 }
-            }, 
-            data:[
-                { name: '河南省', selected: true },
-                { name: '山东省', selected: true },
-                { name: '安徽省', selected: true },
-                { name: '福建省', selected: true },
-                { name: '浙江省', selected: true },
-                { name: '江苏省', selected: true },
-                { name: '上海市', selected: true },
-                { name: '北京市', selected: true },
-            ]
-        }
-    ]
+            },{
+                "name": "浙江",
+                "value": "<p>合伙人： JUSHI-Partner</p><p>联系电话：888888888</p><p style='width: 200px;'>地址：情地址详情地址详情地<br />址详情地址详情</p><img style='width: 150px;height: 150px;position: absolute;top: 5px; right:5px' src='/images/qr.png' />",
+                "itemStyle": {
+                    "emphasis": {
+                        "areaColor": "#FFB528"
+                    },
+                    "normal": {
+                        "areaColor": "#FFB528"
+                    }
+                }
+            }, {
+                "name": "北京",
+                "value": "<p>合伙人： JUSHI-Partner</p><p>联系电话：888888888</p><p style='width: 200px;'>地址：情地址详情地址详情地<br />址详情地址详情</p><img style='width: 150px;height: 150px;position: absolute;top: 5px; right:5px' src='/images/qr.png' />",
+                "itemStyle": {
+                    "emphasis": {
+                        "areaColor": "#FF7B63"
+                    },
+                    "normal": {
+                        "areaColor": "#FF7B63"
+                    }
+                }
+            },{
+                "name": "河南",
+                "value": "<p>合伙人： JUSHI-Partner</p><p>联系电话：888888888</p><p style='width: 200px;'>地址：情地址详情地址详情地<br />址详情地址详情</p><img style='width: 150px;height: 150px;position: absolute;top: 5px; right:5px' src='/images/qr.png' />",
+                "itemStyle": {
+                    "emphasis": {
+                        "areaColor": "#FFEECC"
+                    },
+                    "normal": {
+                        "areaColor": "#FFEECC"
+                    }
+                }
+            },{
+                "name": "安徽",
+                "value": "<p>合伙人： JUSHI-Partner</p><p>联系电话：888888888</p><p style='width: 200px;'>地址：情地址详情地址详情地<br />址详情地址详情</p><img style='width: 150px;height: 150px;position: absolute;top: 5px; right:5px' src='/images/qr.png' />",
+                "itemStyle": {
+                    "emphasis": {
+                        "areaColor": "#FEE78F"
+                    },
+                    "normal": {
+                        "areaColor": "#FEE78F"
+                    }
+                }
+            }, {
+                "name": "江苏",
+                "value": "<p>合伙人： JUSHI-Partner</p><p>联系电话：888888888</p><p style='width: 200px;'>地址：情地址详情地址详情地<br />址详情地址详情</p><img style='width: 150px;height: 150px;position: absolute;top: 5px; right:5px' src='/images/qr.png' />",
+                "itemStyle": {
+                    "emphasis": {
+                        "areaColor": "#FEE78F"
+                    },
+                    "normal": {
+                        "areaColor": "#FEE78F"
+                    }
+                }
+            }, {
+                "name": "山东",
+                "value": "<p>合伙人： JUSHI-Partner</p><p>联系电话：888888888</p><p style='width: 200px;'>地址：情地址详情地址详情地<br />址详情地址详情</p><img style='width: 150px;height: 150px;position: absolute;top: 5px; right:5px' src='/images/qr.png' />",
+                "itemStyle": {
+                    "emphasis": {
+                        "areaColor": "#FEE78F"
+                    },
+                    "normal": {
+                        "areaColor": "#FEE78F"
+                    }
+                }
+            }, {
+                "name": "福建",
+                "value": "<p>合伙人： JUSHI-Partner</p><p>联系电话：888888888</p><p style='width: 200px;'>地址：情地址详情地址详情地<br />址详情地址详情</p><img style='width: 150px;height: 150px;position: absolute;top: 5px; right:5px' src='/images/qr.png' />",
+                "itemStyle": {
+                    "emphasis": {
+                        "areaColor": "#FFEECC"
+                    },
+                    "normal": {
+                        "areaColor": "#FFEECC"
+                    }
+                }
+            }],
+            "label": {
+                "emphasis": {
+                    "show": false
+                },
+                "normal": {
+                    "show": false
+                }
+            },
+            "mapType": "china",
+            "roam": false,
+            "type": "map"
+        }],
+    }]
+};
+
+if (!window._config_.isMobile) {
+    option = {
+        baseOption: {
+            timeline: {
+                show: false,
+            },
+            backgroundColor: '#fff',
+            tooltip: {
+                trigger: 'item',
+                formatter: function (res) {
+                    if (place.indexOf(res.name) == -1) return res.name 
+                    var html = '<div style="min-height: 140px; box-sizing: border-box; padding: 5px 130px 5px 5px;background: #fff;">'
+                             + '    <p style="font-weight: bold">'+ res.name +'</p>'
+                             + res.data.value
+                             + '<div>'
+                    return html
+                }
+            },
+            series: [],
+            animationDurationUpdate: 1000,
+            animationEasingUpdate: 'quinticInOut'
+        },
+        grid: {
+            top: '4%',
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        options: all.options
+    }
+    myChartChina.setOption(option)
+} else {
+    option = {
+        baseOption: {
+            timeline: {
+                show: false,
+            },
+            backgroundColor: '#F5F5F5',
+            series: [],
+            animationDurationUpdate: 1000,
+            animationEasingUpdate: 'quinticInOut'
+        },
+        grid: {
+            top: '4%',
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        options: all.options
+    }
+    myChartChina.setOption(option)
+    myChartChina.on('click', function (item) {
+        if (!item.data) return
+        $('.partner-detail').html('<p class="partner-title">'+ item.name +'</p>' + item.data.value)
+    })
 }
 
-myChartChina.setOption(optionMap)

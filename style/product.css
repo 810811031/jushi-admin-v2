@@ -1,0 +1,72 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.wrapper .logo {
+    width: 10.938vw;
+    height: 5.913vh;
+    position: absolute;
+    top: 2.112vh;
+    left: 2.083vw;
+    z-index: 10;
+}
+
+.wrapper .mobile-close {
+    display: none;
+}
+
+.wrapper .logo img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.wrapper .page-left {
+    width: 53.542vw;
+    height: 100%;
+    background-color: #69c;
+    opacity: .2;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+.wrapper .page-right {
+    width: calc(100% - 57.7vw);
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding-top: 13.728vh;
+    padding-left: 2.604vw;
+}
+
+.wrapper .page-right .back {
+    width: 100%;
+    height: 3.168vh;
+    line-height: 33.168vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wrapper .page-right .back img {
+    width: 1.563vw;
+    height: 3.168vh;
+}
+
+.wrapper .page-right .back p {
+    font-size: 1.042vw;
+    color: #848B97;
+    margin-left: 0.313vw;
+}
