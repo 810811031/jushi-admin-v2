@@ -1,21 +1,40 @@
 if (!window._config_.isMobile) {
-    new Swiper('.swiper-container', {
-        // effect : 'coverflow',
-        // slidesPerView: 2,
-        // centeredSlides: true,
-        // initialSlide: 1,
-        // coverflowEffect: {
-        //     rotate: 0,
-        //     stretch: 0,
-        //     depth: 500,
-        //     modifier: 1,
-        //     slideShadows : false
-        // },
+    var swiper = new Swiper('.swiper-container', {
         slidesPerView: 3,
         spaceBetween: 30,
         centeredSlides: true,
         loop: true,
     })
+
+    $('.left').click(function () {
+        swiper.slidePrev()
+    })
+    $('.right').click(function () {
+        swiper.slideNext()
+    })
+    $('.btn').click(function (event) {
+        event.stopPropagation()
+        $('.shop').fadeIn()
+    })
+    $('body').click(function () {
+        $('.shop').fadeOut()
+        $('.detail-shop').fadeOut()
+    })
+    $('.detail').click(function () {
+        $('.mask').fadeIn()
+        $('.product-detail').animate({ right: 0 })
+    })
+
+    $('.shop-btn').click(function (event) {
+        event.stopPropagation()
+        $('.detail-shop').fadeIn()
+    })
+
+    $('.product-detail .back').click(function () {
+        $('.mask').fadeOut()
+        $('.product-detail').animate({ right: '-100%' })
+    })
+
 } else {
 
 }

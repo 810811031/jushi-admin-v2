@@ -94,7 +94,35 @@
   }
   .swiper-slide-active,.swiper-slide-duplicate-active{
     transform: scale(1.3);
-  }
+}
+
+.wrapper .page-left .swiper-btn {
+    width: 2.604vw;
+    height: 9.504vh;
+    background-color: #F1FDF6;
+    border: 1px solid #5AAF7C;
+    border-radius: .2vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wrapper .page-left .swiper-btn img {
+    width: 60%;
+}
+
+.wrapper .page-left .left {
+    left: 1.302vw;
+}
+
+.wrapper .page-left .right {
+    right: 1.302vw;
+}
 
 .wrapper .page-right {
     width: calc(100% - 57.7vw);
@@ -114,6 +142,7 @@
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .wrapper .page-right .back img {
@@ -163,6 +192,7 @@
     font-size: 0.781vw;
     line-height: 1.094vw;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .wrapper .page-right .do .btn {
@@ -184,7 +214,163 @@
 .wrapper .page-right .do .shop {
     position: absolute;
     width: 11.771vw;
-    height: 12.355vh;
+    height: 13.355vh;
     background-color: #fff; 
+    border-radius: .2vw;
     box-shadow: 0px 2px 12px 0px rgba(40,48,81,0.22);
+    display: none;
+    position: absolute;
+    top: 3vh;
+    left: 15.588vw;
+}
+
+.wrapper .page-right .do .shop .inside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .page-right .do .shop .inside a {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .page-right .do .shop img {
+    width: 8.333vw;
+    cursor: pointer;
+}
+
+.wrapper .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: rgba(0,0,0,.4);
+}
+
+.wrapper .product-detail {
+    width: 46.875vw;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    z-index: 11;
+    box-sizing: border-box;
+    padding-left: 2.344vw;
+    padding-top: 5.808vh;
+    overflow-y: auto;
+}
+
+.wrapper .product-detail .back {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wrapper .product-detail .back img {
+    width: 1.563vw;
+}
+
+.wrapper .product-detail .back p {
+    color: #656E7D;
+    font-size: 1.042vw;
+    margin-left: .4vw;
+}
+
+.wrapper .product-detail .title {
+    color: #656E7D;
+    font-size: 2.083vw;
+    line-height: 2.917vw;
+    margin-top: .2vh;
+}
+
+.wrapper .product-detail .content {
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.wrapper .product-detail .content .row {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 4.963vh;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+
+.wrapper .product-detail .content .row span {
+    display: inline-block;
+    width: 5.677vw;
+    font-size: 0.833vw;
+    color: #656E7D;
+    vertical-align: top;
+    
+}
+
+.wrapper .product-detail .content .row p {
+    width: 28.125vw;
+    font-size: 0.833vw;
+    display: inline-block;
+    color: #656E7D;
+    vertical-align: top;
+    padding: 1.5vh 0;
+    padding-left: .7vw;
+    border-left: 1px solid #ccc;
+}
+
+.wrapper .product-detail .shop-btn {
+    width: 8.177vw;
+    height: 6.441vh;
+    line-height: 6.441vh;
+    text-align: center;
+    color: #fff;
+    font-size: 0.938vw;
+    border-radius: .4vw;
+    background-color: #399F62;
+    margin-top: 5.28vh;
+    cursor: pointer;
+    position: relative;
+}
+
+.wrapper .product-detail .detail-shop {
+    width: 11.771vw;
+    height: 13.355vh;
+    background-color: #fff; 
+    border-radius: .2vw;
+    box-shadow: 0px 2px 12px 0px rgba(40,48,81,0.22);
+    position: absolute;
+    bottom: -5vh;
+    left: 9vw;
+    display: none;
+}
+
+.wrapper .product-detail .detail-shop .inside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .product-detail .detail-shop a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.wrapper .product-detail .detail-shop img {
+    height: 5.069vh;
 }
