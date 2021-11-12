@@ -242,6 +242,10 @@
     flex-direction: column;
 }
 
+.wrapper .mobile-close {
+    display: none;
+}
+
 .wrapper .page-right .do .shop img {
     width: 8.333vw;
     cursor: pointer;
@@ -315,7 +319,6 @@
     font-size: 0.833vw;
     color: #656E7D;
     vertical-align: top;
-    
 }
 
 .wrapper .product-detail .content .row p {

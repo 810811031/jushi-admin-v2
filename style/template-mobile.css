@@ -1,0 +1,56 @@
+.wrapper {
+    width: 100%;
+    position: relative;
+    font-size: 0;
+}
+
+.wrapper .logo {
+    display: none;
+}
+
+.wrapper .mobile-nav-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: .3rem;
+    top: .16rem;
+}
+
+.mobile-nav-btn img {
+    width: .3rem;
+    height: .3rem;
+}
+
+.mobile-nav-btn span {
+    color: #333333;
+    font-size: .28rem;
+    margin-left: .1rem;
+}
+
+.wrapper .page-left {
+    display: none;
+}
+
+.wrapper .page-right {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 .28rem;
+}
+
+.wrapper .page-right .back {
+    display: none;
+}
+
+.wrapper .page-right .title {
+    color: #333333;
+    padding-top: 1rem;
+    font-size: .28rem;
+    font-weight: bold;
+}
+
+.wrapper .content {
+    margin-top: .2rem;
+    font-size: .24rem;
+    color: #656E7D;
+}

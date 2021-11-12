@@ -36,5 +36,22 @@ if (!window._config_.isMobile) {
     })
 
 } else {
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: true,
+        loop: true
+    })
 
+    $('.detail').click(function () {
+        $('.mask-dark').fadeIn()
+        $('.product-detail').fadeIn()
+    })
+
+    $('.mask-dark').click(function () {
+        $(this).fadeOut()
+        $('.product-detail').fadeOut(100)
+    })
+    $('.mobile-close').click(function() {
+        $('.mask-dark').fadeOut()
+        $('.product-detail').fadeOut(100)
+    })
 }
